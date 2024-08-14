@@ -1,0 +1,61 @@
+
+.box-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+header {
+  padding: 8px 70px;
+  top: 0;
+  position: fixed;
+  background-color: #0c0c0c;
+  opacity: 0.9;
+  z-index: 999;
+  
+}
+
+.menu {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img {
+  display: flex;
+ }
+
+.topicos {
+  list-style: none;
+  display: flex;
+}
+ .topico {
+  margin-right: 50px;
+ }
+
+ .conf {
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.8s ease;
+  color: rgb(209, 209, 209);
+ }
+
+ .conf:hover {
+  color: #ffffff;
+  transition: color 0.8s ease;
+ }
+
+ @media (max-width: 1400px) {
+    .img-logo {
+      width: 80%;
+    }
+  
+
+    :root {
+      font-size: 0.850rem;
+    }
+
+
+ }

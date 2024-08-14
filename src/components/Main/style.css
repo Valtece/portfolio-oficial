@@ -1,0 +1,57 @@
+.background {
+  background-image: url(fundo.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #976DFE;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2.6rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.fala {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+.box-emoji {
+  display: flex;
+  justify-content: center;
+}
+
+.img-emoji {
+  width: 70%;
+}
+
+@media (max-width: 1400px) {
+  .img-emoji {
+    width: 40%;
+  }
+}

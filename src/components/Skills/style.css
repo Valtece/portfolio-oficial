@@ -1,0 +1,75 @@
+.box-skills {
+  background-color: black;
+  padding: 100px 130px;
+}
+
+.habilidade {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.skill {
+  display: flex;
+  flex-direction: row;
+}
+
+.skills {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+
+.desc-icone {
+  color: #a5a5a5;
+}
+
+.container02 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px; /* Espaçamento entre os quadrados */
+  max-width: 600px;
+  margin: 0 auto;
+}
+.quadrado {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #1E1E1E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px; /* Margem ao redor de cada quadrado */
+  background-color: #1E1E1E;
+  transition: 0.8s ease;
+}
+
+.quadrado:hover {
+  transition: 0.8s ease;
+  border: 1px solid #976dfe;
+}
+
+@media (max-width: 1400px) {
+
+  .container02 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 4px; /* Espaçamento entre os quadrados */
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .quadrado {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px; /* Margem ao redor de cada quadrado */
+    background-color: #1E1E1E;
+  }
+
+  .icones {
+    width: 40%;
+  }
+
+}

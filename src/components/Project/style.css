@@ -1,0 +1,130 @@
+.box-project {
+  background-color: black;
+  padding: 100px 130px;
+}
+
+.project {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.projetos {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+.box-projeto{
+  width: 35%;
+  background-color: #0C0C0C;
+  padding: 0px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.8s ease;
+  border: 1px solid #1E1E1E;
+}
+
+.img-project {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.box-projeto:hover {
+  border: 1px solid #976dfe;
+  transition: 0.8s ease;
+}
+
+.flip-container {
+  width: 35%;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flipper{
+	width: 100%;
+	height: 100%;
+  position: relative;
+  transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+
+.flip-container:hover .flipper{
+	transform: rotatey(180deg);
+	/* se quiser uma animação na vertical,
+	troque por rotateX(180deg)
+	*/
+}
+
+.front, .back{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+  backface-visibility: hidden;
+}
+
+.back{
+	transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-projeto{
+  margin: 25px;
+  font-size: 1.7rem;
+}
+
+.descr-projeto {
+  margin: 25px;
+  font-size: 1.2rem;
+  color: rgb(199, 199, 199);
+}
+
+.veja {
+  margin: 25px;
+  font-size: 1.4rem;
+}
+
+a {
+  transition: 0.6s ease;
+  color: #ffffff;
+}
+
+a:hover {
+  transition: 0.6s ease;
+  color: #976dfe;
+}
+
+.loading {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgb(212, 212, 212)
+}
+
+@media (max-width: 1400px) {
+  .flip-container {
+    height: 200px;
+  }
+
+  .titulo-projeto{
+    margin: 25px;
+    font-size: 1.2rem;
+  }
+  
+  .descr-projeto {
+    margin: 25px;
+    font-size: 1rem;
+    color: rgb(199, 199, 199);
+  }
+  
+  .veja {
+    margin: 25px;
+    font-size: 1.1rem;
+  }
+}
